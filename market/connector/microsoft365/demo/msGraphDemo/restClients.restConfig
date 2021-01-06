@@ -18,7 +18,7 @@
             </property>
             <property>
                 <name>AUTH.scope</name>
-                <value>user.read</value>
+                <value>user.read calendars.read</value>
                 <password>false</password>
             </property>
             <property>
@@ -32,7 +32,7 @@
                 <password>false</password>
             </property>
             <feature>
-                <class>ch.ivyteam.ivy.rest.client.mapper.JsonFeature</class>
+                <class>com.microsoft.odata.OdataJsonFeature</class>
             </feature>
             <feature>
                 <class>com.microsoft.auth.OAuth2Feature</class>

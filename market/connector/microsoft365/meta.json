@@ -11,7 +11,9 @@
 					{
 						"source": "demo/msGraphDemo/src/com/microsoft",
 						"includes": [ 
-							"auth/OAuth2Feature.java"
+							"auth/OAuth2Feature.java",
+							"odata/OdataJsonFeature.java",
+							"odata/JsonModifier.java"
 						],
 						"path": "src/com/microsoft"
 					}
@@ -25,7 +27,7 @@
 				"namespace": "com.microsoft.graph",
 				"clientId": "007036dc-72d1-429f-88a7-ba5d5cf5ae58",
 				"features": [
-					"ch.ivyteam.ivy.rest.client.mapper.JsonFeature",
+					"com.microsoft.odata.OdataJsonFeature",
 					"com.microsoft.auth.OAuth2Feature"
 				],
 				"properties": [
@@ -38,7 +40,7 @@
 					},
 					{
 						"name": "AUTH.scope",
-						"value": "user.read"
+						"value": "user.read calendars.read"
 					},
 					{
 						"name": "AUTH.baseUri",
